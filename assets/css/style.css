@@ -1,9 +1,17 @@
+/* font-import */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lobster&family=Lobster+Two:ital,wght@0,700;1,700&family=Poppins:wght@300;400&family=Ubuntu:wght@500&display=swap');
+
 body {
     margin: 0;
     padding: 0;
 }
 
 /* ------------common------------ */
+:root {
+    --primary-color: #00b4d8;
+    --p-color: #9a8c98;
+}
+
 .container {
     padding: 30px 0;
 }
@@ -16,7 +24,7 @@ body {
 
 .nav-left img {
     width: 200px;
-    height: 50px;
+    height: 40px;
 }
 
 .nav-right {
@@ -29,11 +37,27 @@ body {
     border-radius: 50px;
     color: #fff;
     padding: 5px 20px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     text-decoration: none;
+    transition: .5s;
+}
+
+.nav-right a:hover {
+    background-image: linear-gradient(skyblue, rgb(0, 153, 255));
 }
 
 /* ------------hero-section------------- */
+.hero-main {
+    position: relative;
+    top: 100px;
+    color: #fff;
+}
+
+.hero-main h1 {
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+}
 
 .input-group {
     width: 400px;
@@ -58,4 +82,55 @@ body {
 .btn-search:hover {
     background: #1c1c1c;
     color: #fff;
+}
+
+/* featured-detination */
+.card {
+    position: relative;
+}
+
+.text-center {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.card-body {
+    margin-top: 25px;
+}
+
+.card-body h5 {
+    font-weight: 700;
+}
+
+.card-body p {
+    color: var(--p-color);
+}
+
+.cf-details {
+    display: flex;
+    border: none;
+    background: white;
+    padding-bottom: 15px;
+}
+
+.card-footer-details {
+    margin-right: 10px;
+}
+
+.card-footer-details i {
+    color: var(--primary-color);
+}
+
+.cost {
+    position: absolute;
+    top: 215px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
