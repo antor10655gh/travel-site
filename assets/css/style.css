@@ -21,7 +21,7 @@ body {
 /* ------------nav-bar section---------- */
 .nav-hero {
     height: 100vh;
-    background: url(/assets/images/banner1.jpg) no-repeat center center fixed;
+    background: url(/assets/images/banner1.jpg) center fixed;
     background-size: 100%;
 }
 
@@ -87,7 +87,7 @@ body {
     color: #fff;
 }
 
-/* featured-detination */
+/* featured-destination */
 .card {
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -138,6 +138,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fa-star {
+    color: gray;
+}
+
+.rating .fillup {
+    color: var(--primary-color);
+}
+
+.rating {
+    position: absolute;
+    background-color: white;
+    top: 220px;
+    right: 0;
 }
 
 /* -----------------travelling-gallery section------------------- */
