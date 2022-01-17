@@ -20,11 +20,13 @@ body {
 /* ------------nav-bar section---------- */
 .nav-hero {
     height: 100vh;
+    background: url(/assets/images/banner1.jpg) no-repeat center center fixed;
+    background-size: 100%;
 }
 
 .nav-left img {
     width: 200px;
-    height: 40px;
+    height: 100px;
 }
 
 .nav-right {
@@ -65,12 +67,12 @@ body {
 }
 
 .btn-search {
-    background: #424242;
+    background: var(--primary-color);
     border-radius: 0;
     color: #fff;
     border-width: 1px;
     border-style: solid;
-    border-color: #1c1c1c;
+    border-color: var(--primary-color);
 }
 
 .btn-search:link,
@@ -87,6 +89,8 @@ body {
 /* featured-detination */
 .card {
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    cursor: pointer;
 }
 
 .text-center {
@@ -133,4 +137,97 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* -----------------travelling-gallery section------------------- */
+.gallery {
+    position: relative;
+    transition: 1s;
+}
+
+.gallery-banner img {
+    width: 100%;
+}
+
+.gallery-details {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background-color: rgba(0, 204, 255, 0.418);
+    width: 267px;
+    height: 178px;
+    display: none;
+    padding-top: 35px;
+    color: #fff;
+}
+
+.gallery:hover .gallery-details {
+    display: block;
+    cursor: pointer;
+}
+
+
+/* -----------------offer-section--------------- */
+.offer {
+    background-image: url(/assets/images/banner2.jpg);
+    background-size: 100%;
+    height: 30vh;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.offer-main {
+    display: flex;
+    align-items: center;
+}
+
+.offer-details,
+.offer-btn {
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.offer-btn a {
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* -------------review-section--------------- */
+.testimonial-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    padding: 0px 50px;
+}
+
+.testimonial-details {
+    text-align: center;
+    transition: .5s;
+}
+
+.testimonial-details:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.testimonial-detail {
+    padding: 25px;
+}
+
+.testimonial-detail i {
+    color: var(--primary-color);
+}
+
+.testimonial-detail p {
+    color: gray;
+    text-align: center;
+}
+
+.testimonial-image img {
+    border-radius: 100px;
+    width: 30%;
 }
