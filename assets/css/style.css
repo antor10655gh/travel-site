@@ -21,7 +21,7 @@ body {
 /* ------------nav-bar section---------- */
 .nav-hero {
     height: 100vh;
-    background: url(/assets/images/banner1.jpg) center fixed;
+    background: url(../assets/images/banner1.jpg) center fixed;
     background-size: 100%;
 }
 
@@ -340,7 +340,7 @@ footer {
     .nav-hero {
         background-size: initial;
         height: 100vh;
-        background: url(/assets/images/banner1.jpg) center fixed;
+        background: url(../assets/images/banner1.jpg) center fixed;
     }
 
     .text-center {
