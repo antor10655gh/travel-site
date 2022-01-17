@@ -209,6 +209,12 @@ body {
     border: 2px solid #fff;
     text-decoration: none;
     color: #fff;
+    transition: .5s;
+}
+
+.offer-btn a:hover {
+    color: #000;
+    background-color: rgb(50, 169, 224);
 }
 
 /* -------------review-section--------------- */
@@ -366,6 +372,10 @@ footer {
 
     .cost {
         top: 185px;
+    }
+
+    .rating {
+        top: 190px;
     }
 
     .gallery-banner {
